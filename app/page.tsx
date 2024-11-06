@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faTwitter, faLinkedin, faBluesky } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faBluesky } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import profileImage from '@/images/tree_profile.jpeg'
 
@@ -31,10 +31,6 @@ export default function Home() {
               <Link href="https://github.com/padmaia" className="text-gray-700 hover:text-gray-900">
                 <FontAwesomeIcon icon={faGithub} size="2x" />
                 <span className="sr-only">GitHub</span>
-              </Link>
-              <Link href="https://twitter.com/padmaia" className="text-gray-700 hover:text-gray-900">
-                <FontAwesomeIcon icon={faTwitter} size="2x" />
-                <span className="sr-only">Twitter</span>
               </Link>
               <Link href="https://bsky.app/profile/padmaia.bsky.social" className="text-gray-700 hover:text-gray-900">
                 <FontAwesomeIcon icon={faBluesky} size="2x" />
