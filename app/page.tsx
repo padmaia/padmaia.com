@@ -20,8 +20,6 @@ export default function Home() {
             <Image
               src={profileImage}
               alt="Maia Teegarden"
-              layout="fill"
-              objectFit="cover"
             />
           </div>
           <div className="text-center md:text-left">
