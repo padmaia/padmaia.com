@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faBluesky } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import profileImage from '@/images/tree_profile.jpeg'
-import ExperienceRolodex from './components/ExperienceRolodex'
+import ExperienceRolodex from './_components/ExperienceRolodex'
 
 export default function Home() {
   return (
