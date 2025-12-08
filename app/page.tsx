@@ -53,7 +53,7 @@ export default function Home() {
                   <FontAwesomeIcon icon={faGithub} className="w-5 h-5" />
                 </Link>
                 <Link 
-                  href="https://bsky.app/profile/padmaia.bsky.social" 
+                  href="https://bsky.app/profile/padmaia.com" 
                   className="text-foreground-muted hover:text-accent-teal transition-colors"
                   aria-label="Bluesky"
                 >
