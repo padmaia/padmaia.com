@@ -32,7 +32,7 @@ export default function ExperienceRolodex() {
       <p className="text-foreground-muted text-sm tracking-wide mb-3">
         seeker of
       </p>
-      <div className="h-[2.5rem] md:h-[3rem] overflow-hidden perspective-500">
+      <div className="h-20 md:h-20 overflow-hidden perspective-500">
         <p
           className={`${current.size} font-semibold ${current.color} transition-all duration-300 ease-out ${
             isFlipping 
