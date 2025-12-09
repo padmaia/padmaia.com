@@ -22,10 +22,10 @@ export default function Home() {
 
         <main className="max-w-4xl mx-auto w-full flex-1 flex flex-col justify-center">
           {/* Hero Section */}
-          <section className="flex flex-col md:flex-row items-center md:items-start gap-12 animate-slide-up">
+          <section className="flex flex-col lg:flex-row items-center lg:items-start gap-12 animate-slide-up">
             {/* Profile Image */}
             <div className="relative shrink-0">
-              <div className="profile-glow w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden">
+              <div className="profile-glow w-40 h-40 lg:w-48 lg:h-48 rounded-full overflow-hidden">
                 <Image
                   src={profileImage}
                   alt="Maia Teegarden"
@@ -35,8 +35,8 @@ export default function Home() {
             </div>
 
             {/* Content */}
-            <div className="text-center md:text-left">
-              <h1 className="text-3xl md:text-4xl font-bold mb-8 font-mono">
+            <div className="text-center lg:text-left">
+              <h1 className="text-3xl lg:text-4xl font-bold mb-8 font-mono">
                 <span className="gradient-text">Maia Teegarden</span>
               </h1>
               
@@ -44,7 +44,7 @@ export default function Home() {
               <ExperienceRolodex />
 
               {/* Social Links - subtle */}
-              <div className="flex justify-center md:justify-start gap-5">
+              <div className="flex justify-center lg:justify-start gap-5">
                 <Link 
                   href="https://github.com/padmaia" 
                   className="text-foreground-muted hover:text-accent-teal transition-colors"
