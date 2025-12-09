@@ -3,9 +3,9 @@
 import { useState, useEffect } from 'react'
 
 const experiences = [
-  { text: 'meaningful human experiences', size: 'text-3xl md:text-4xl', color: 'text-foreground-primary' },
-  { text: 'delightful digital experiences', size: 'text-3xl md:text-4xl', color: 'text-foreground-secondary' },
-  { text: 'engaging developer experiences', size: 'text-3xl md:text-4xl', color: 'text-foreground-muted' },
+  { text: 'authentic human', color: 'text-foreground-primary' },
+  { text: 'delightful digital', color: 'text-foreground-secondary' },
+  { text: 'immersive dev', color: 'text-foreground-muted' },
 ]
 
 export default function ExperienceRolodex() {
@@ -32,19 +32,20 @@ export default function ExperienceRolodex() {
       <p className="text-foreground-muted text-sm tracking-wide mb-3">
         seeker of
       </p>
-      <div className="h-20 md:h-20 overflow-hidden perspective-500">
+      <div className="h-32 sm:h-32 md:h-32 lg:h-16 overflow-hidden perspective-500">
         <p
-          className={`${current.size} font-semibold ${current.color} transition-all duration-300 ease-out ${
+          className={`text-3xl md:text-4xl font-semibold transition-all duration-300 ease-out ${
             isFlipping 
-              ? 'opacity-0 -translate-y-full rotateX-90' 
-              : 'opacity-100 translate-y-0 rotateX-0'
+              ? 'opacity-0 -translate-y-full' 
+              : 'opacity-100 translate-y-0'
           }`}
           style={{
             transform: isFlipping ? 'translateY(-100%) rotateX(90deg)' : 'translateY(0) rotateX(0deg)',
             transformOrigin: 'bottom center',
           }}
         >
-          {current.text}
+          <span className={current.color}>{current.text}</span>{' '}
+          <span className="gradient-text">experiences</span>
         </p>
       </div>
     </div>
